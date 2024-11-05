@@ -7,12 +7,15 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class ExceptionThrower {
+        
 
         private static final Logger LOG=LoggerFactory.getLogger(ExceptionThrower.class);
         public void getCounter() { 
                 int i = 1/0; // this will throw the error...
                 LOG.info(""+i);
         }
+
+        
         
         public void doNothing() throws IOException {
                 throw new IOException("TESTIOEXCEPTION"); 
